@@ -1,0 +1,60 @@
+diff --git a/lab/sample/phishing_sample.eml b/lab/sample/phishing_sample.eml
+new file mode 100644
+index 0000000000000000000000000000000000000000..4687d5905970d8c15217f7e71964263dd5c9d59a
+--- /dev/null
++++ b/lab/sample/phishing_sample.eml
+@@ -0,0 +1,54 @@
++From: "IT Helpdesk" <support@micr0soft-helpdesk.com>
++To: "Alex Analyst" <alex.analyst@example.com>
++Subject: Action Required: Verify Your Account
++Date: Tue, 12 Mar 2024 10:22:08 -0500
++Message-ID: <20240312102208.12345@mail.micr0soft-helpdesk.com>
++MIME-Version: 1.0
++Content-Type: multipart/mixed; boundary="mix-1234"
++Received: from mail.micr0soft-helpdesk.com (203.0.113.45) by mx.example.com with ESMTPS id ABC123
++    for <alex.analyst@example.com>; Tue, 12 Mar 2024 10:22:10 -0500 (EST)
++Received: from unknown (HELO desktop) (10.0.0.55) by mail.micr0soft-helpdesk.com with SMTP; Tue, 12 Mar 2024 10:22:05 -0500
++Authentication-Results: mx.example.com;
++    spf=fail (sender IP is 203.0.113.45) smtp.mailfrom=micr0soft-helpdesk.com;
++    dkim=none;
++    dmarc=fail (p=reject) header.from=micr0soft-helpdesk.com
++
++--mix-1234
++Content-Type: multipart/alternative; boundary="alt-5678"
++
++--alt-5678
++Content-Type: text/plain; charset="UTF-8"
++Content-Transfer-Encoding: 7bit
++
++Hello Alex,
++
++We detected unusual activity on your account. Please verify your identity within 24 hours to avoid suspension.
++
++Verify now: http://micr0soft-helpdesk.com.verify-user-login.example.net/auth
++
++Regards,
++IT Helpdesk
++
++--alt-5678
++Content-Type: text/html; charset="UTF-8"
++Content-Transfer-Encoding: 7bit
++
++<html>
++  <body>
++    <p>Hello Alex,</p>
++    <p>We detected unusual activity on your account. Please verify your identity within <strong>24 hours</strong> to avoid suspension.</p>
++    <p><a href="http://micr0soft-helpdesk.com.verify-user-login.example.net/auth">Verify your account</a></p>
++    <p>Regards,<br/>IT Helpdesk</p>
++  </body>
++</html>
++
++--alt-5678--
++
++--mix-1234
++Content-Type: text/plain; name="Invoice_2024.txt"
++Content-Transfer-Encoding: base64
++Content-Disposition: attachment; filename="Invoice_2024.txt"
++
++VGhpcyBpcyBhIGhhcm1sZXNzIHRyYWluaW5nIGF0dGFjaG1lbnQgZm9yIHRoZSBwaGlzaGluZyBhbmFseXNpcyBsYWIuCkRvIG5vdCBleGVjdXRlIGFueXRoaW5nLiBUcmVhdCBpdCBhcyBzdXNwaWNpb3VzIGFuZCBhbmFseXplIHNhZmVseS4K
++
++--mix-1234--
