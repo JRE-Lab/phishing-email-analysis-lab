@@ -1,0 +1,8 @@
+diff --git a/lab/sample/Invoice_2024.txt b/lab/sample/Invoice_2024.txt
+new file mode 100644
+index 0000000000000000000000000000000000000000..cd4ca11f06bc0dccd03b69a9a81ef26bd47a7c61
+--- /dev/null
++++ b/lab/sample/Invoice_2024.txt
+@@ -0,0 +1,2 @@
++This is a harmless training attachment for the phishing analysis lab.
++Do not execute anything. Treat it as suspicious and analyze safely.
